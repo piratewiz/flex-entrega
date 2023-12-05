@@ -1,0 +1,142 @@
+:root {
+  --rc-font-size-h1: 4em;
+  --rc-font-size-h2: 2.1875em;
+  --rc-font-size-h3: 1.25em;
+  --rc-font-size-text: 1.25em;
+  --rc-font-size-link: 1.25em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    z-index: 2;
+}
+
+header > h2 {
+    color: #1F242D;
+}
+
+nav > ul > li > a {
+    font-size: var(--rc-font-size-link);
+    color: #1F242D;
+}
+
+
+.flex-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 180px;
+  }
+  
+.container {
+    height: 30vh;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > button {
+    border: none;
+    border-radius: 8px;
+    width: 8rem;
+    padding: 10px;
+    background-color: #8EADD5;
+    color: aliceblue;
+    border-radius: px;
+}
+
+.container > h1 {
+    font-size: var(--rc-font-size-h1);
+}
+
+.container > p {
+    font-size: var(--rc-font-size-text);
+}
+
+#companies {
+    margin-top: 140px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+h3 {
+    font-size: var(--rc-font-size-h3);
+    color: #383838;
+}
+
+#companies > div {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   max-width: 680px;
+   min-width: 340px;
+   background-color: #f6f6f6;
+   border-radius: 12px;
+}
+
+.img-companies > img {
+    width: 15%;
+}
+
+@media (max-width: 700px) {
+    header {
+      padding: 10px;
+    }
+  
+    header > nav {
+      display: none;
+    }
+  
+    .menu {
+      display: block;
+      cursor: pointer;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    #hero > img {
+    } 
+  }
+
+
+
+
+
+
+
+
