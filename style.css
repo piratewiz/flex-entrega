@@ -32,6 +32,10 @@ nav > ul > li > a {
     color: #1F242D;
 }
 
+nav > ul > li > a:hover {
+    color: #8EADD5;
+}
+
 
 .flex-container {
     display: flex;
@@ -67,6 +71,12 @@ nav > ul > li > a {
     background-color: #8EADD5;
     color: aliceblue;
     border-radius: px;
+}
+
+.container > button:hover{
+    cursor: pointer;
+    color: #1F242D;
+    transition: 0.5s;
 }
 
 .container > h1 {
@@ -107,9 +117,42 @@ h3 {
     width: 15%;
 }
 
+footer {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+    min-height: 30vh;
+}
+
+.footer-ul {
+    width: 200px;
+    height: 240px;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+footer > .footer-ul > li {
+    gap: 30px;
+    height: 40px;
+}
+
+
+footer > ul > li:first-child {
+    font-weight: bolder;
+    font-size: var(--rc-font-size-link);
+}
+
+.footer-ul > li > a {
+    color: #1F242D;
+    font-size: var(--rc-font-size-link);
+}
+
 @media (max-width: 700px) {
     header {
-      padding: 10px;
+      padding: 20px;
     }
   
     header > nav {
@@ -127,10 +170,50 @@ h3 {
 
     .container {
         padding: 15px;
+        align-items: center;
+    }
+
+    #hero > .container > h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero > .container > p {
+        font-size: medium;
     }
 
     #hero > img {
-    } 
+        margin-top: 80px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+  }
+
+
+  @media (max-width: 1040px) {
+    #hero {
+      padding: 20px;
+      padding-top: 150px;
+    }
+  
+    #hero > .container {
+        width: 250px;
+        align-items: center;
+    }
+  
+    .container > h1 {
+      font-size: 2.1rem;
+    }
+  
+    #hero > div > p {
+      text-align: center;
+      font-size: 18px;
+    }
+  
+    #hero > img {
+      width: 350px;
+    }
   }
 
 
